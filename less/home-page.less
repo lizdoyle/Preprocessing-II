@@ -2,13 +2,18 @@
 //Hero Section
   .hero{
     width: 100%;
-    .dashbottom();
 
     img {
       margin-bottom: 20px;
     }
     .hero-content {
       margin-bottom: 15px;
+    }
+    p {
+      .dashbottom();
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+
     }
 
   }
@@ -86,4 +91,99 @@
 
     }
   }
+}
+
+@media @mobile {
+  .home {
+    //Hero Section
+      .hero{
+        padding: 0 30px;
+        
+    
+        img {
+          margin-bottom: 20px;
+        }
+        .hero-content {
+          margin-bottom: 15px;
+        }
+    
+      }
+    
+    // Top Section Design, Picture align right
+      .content-section {
+        display: flex;
+        flex-direction: column wrap;
+        justify-content: center;
+    
+       
+        
+        .text-content {
+          width: 90%;
+
+          p {
+            padding-bottom: 20px;
+          } 
+        }
+    
+        .img-content {
+          width: 90%;
+    
+          img {
+            border-radius: 10px;
+            width: 100%;
+          }
+        }
+      }
+    // Middle Section, picture align left
+      .inverse-content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+
+        .text-content {
+          width: 90%;
+          padding-bottom: 10px;
+         
+          p {
+            padding-bottom: 20px;
+          } // padding: 0 30px;
+        }
+    
+        .img-content {
+          width: 90%;
+          padding-bottom: 20px;
+        }
+
+      }
+    // Bottom Section Design, Picture align right
+    
+      .content-destination {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    
+        img {
+          // width: 90%;
+          margin: 10px 0;
+          padding-bottom: 20px;
+        }
+      }
+    // Column Section
+      .content-pick {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        padding-left: 20px;
+    
+        .destination {
+          width: 90%;         
+        
+        }
+      }
+    }
 }
