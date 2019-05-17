@@ -7,7 +7,6 @@ header {
     margin-top: 15px;
     padding: 15px 0;
     .dashbottom();
-
     
     h1{
         font-size: 4rem;
@@ -24,5 +23,31 @@ header {
             font-size: 1.6rem;
             color: #000000;
         }
+    }
+}
+
+@media @mobile {
+    header {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        // margin: 0;
+        padding: 0;
+        
+        h1{
+            text-align: center;
+            font-size: 3rem;
+            padding: 10px 0;
+        }
+        nav {
+            justify-content: space-between;
+        
+            a {
+    
+                padding: 1rem 3rem;
+            }
+        }
+
     }
 }

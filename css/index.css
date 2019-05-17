@@ -190,6 +190,26 @@ header nav a {
   font-size: 1.6rem;
   color: #000000;
 }
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    padding: 0;
+  }
+  header h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px 0;
+  }
+  header nav {
+    justify-content: space-between;
+  }
+  header nav a {
+    padding: 1rem 3rem;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
