@@ -1,1 +1,15 @@
 // Mixins in here
+.flexrwrap(){
+    display:flex;
+    flex-flow: row wrap;
+}
+
+.align(@just, @item){
+    display:flex;
+    justify-content: @just;
+    align-items: @item;
+}
+
+.dashbottom(){
+    border-bottom: 2px dashed slategray;
+}
