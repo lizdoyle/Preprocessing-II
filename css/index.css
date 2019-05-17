@@ -259,10 +259,13 @@ header nav a {
   margin-bottom: 30px;
 }
 .home .content-pick .btn {
-  background-color: teal;
-  color: white;
+  background-color: #17A2B8;
+  color: #FFFFFF;
   padding: 12px 0px;
   font-size: 1.8rem;
   border-radius: 10px;
   text-align: center;
+}
+.home .content-pick .btn:hover {
+  background-color: #117a8b;
 }
