@@ -1,1 +1,56 @@
 // Navigation Styles here
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    align-content: center;
+    margin-top: 15px;
+    padding: 15px 0;
+    .dashbottom();
+    
+    h1{
+        font-size: 4rem;
+
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        
+        
+        a{
+            text-decoration: none;
+            padding: 1.3rem;  
+            font-size: 1.6rem;
+            color: #000000;
+        }
+    }
+}
+
+//Media Queries for Header & Nav
+@media @mobile {
+    header {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        margin-top: 20px;
+        padding: 0;
+        
+        h1{
+            text-align: center;
+            font-size: 3rem;
+            padding: 10px 0;
+            margin-top: 20px;
+
+        }
+        nav {
+            justify-content: space-between;
+        
+            a {
+    
+                padding: 1rem 3rem;
+            }
+        }
+
+    }
+}

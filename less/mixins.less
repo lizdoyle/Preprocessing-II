@@ -1,1 +1,27 @@
 // Mixins in here
+.flexrwrap(){
+    display:flex;
+    flex-flow: row wrap;
+}
+
+.align(@just, @item){
+    display:flex;
+    justify-content: @just;
+    align-items: @item;
+}
+
+.dashbottom(){
+    border-bottom: 2px dashed slategray;
+}
+
+.button(@size, @bg, @text){
+    background-color: @bg;
+      color: @text;
+      // width: 5rem;
+      // height: auto;
+      // margin: 0px;
+      padding: 12px 0px;
+      font-size: @size;
+      border-radius: 10px;
+      text-align: center;
+}

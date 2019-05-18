@@ -1,5 +1,24 @@
 .home {
+//Hero Section
+  .hero{
+    width: 100%;
 
+    img {
+      margin-bottom: 20px;
+    }
+    .hero-content {
+      margin-bottom: 15px;
+    }
+    p {
+      .dashbottom();
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+
+    }
+
+  }
+
+// Top Section Design, Picture align right
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -22,7 +41,7 @@
       }
     }
   }
-
+// Middle Section, picture align left
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
@@ -37,6 +56,7 @@
       padding-left: 0;
     }
   }
+// Bottom Section Design, Picture align right
 
   .content-destination {
     width: 75%;
@@ -46,8 +66,9 @@
       border-radius: 10px;
     }
   }
-
+// Column Section
   .content-pick {
+    margin: 0 25px;
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
@@ -56,6 +77,113 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      
+    }
+
+    // Added Button Styles
+    .btn {
+      .button(1.8rem, @button-bg, @white);
+  
+      &:hover{
+         background-color: @dark; 
+        }
+    
+
     }
   }
-}// home
+}
+
+@media @mobile {
+  .home {
+    //Hero Section
+      .hero{
+        padding: 0 30px;
+        
+    
+        img {
+          margin-bottom: 20px;
+        }
+        .hero-content {
+          margin-bottom: 15px;
+        }
+    
+      }
+    
+    // Top Section Design, Picture align right
+      .content-section {
+        display: flex;
+        flex-direction: column wrap;
+        justify-content: center;
+    
+       
+        
+        .text-content {
+          width: 90%;
+
+          p {
+            padding-bottom: 20px;
+          } 
+        }
+    
+        .img-content {
+          width: 90%;
+    
+          img {
+            border-radius: 10px;
+            width: 100%;
+          }
+        }
+      }
+    // Middle Section, picture align left
+      .inverse-content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+
+        .text-content {
+          width: 90%;
+          padding-bottom: 10px;
+         
+          p {
+            padding-bottom: 20px;
+          } // padding: 0 30px;
+        }
+    
+        .img-content {
+          width: 90%;
+          padding-bottom: 20px;
+        }
+
+      }
+    // Bottom Section Design, Picture align right
+    
+      .content-destination {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    
+        img {
+          // width: 90%;
+          margin: 10px 0;
+          padding-bottom: 20px;
+        }
+      }
+    // Column Section
+      .content-pick {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        padding-left: 20px;
+    
+        .destination {
+          width: 90%;         
+        
+        }
+      }
+    }
+}
